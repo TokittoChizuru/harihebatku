@@ -1,0 +1,80 @@
+/* Mengatur latar belakang halaman */
+body {
+    background-color: #B3E5FC; /* Warna biru muda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #305057;
+    font-size: 15px;
+}
+
+/* Kotak login */
+.login-box {
+    background-color: #89ccd9; /* Warna biru sedikit lebih gelap */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    width: 80px; /* Sesuaikan ukuran logo */
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+/* Judul Login */
+.login-box h2 {
+    margin: 0 0 20px;
+    color: #305057;
+}
+
+/* Label input */
+.login-box label {
+    display: block;
+    text-align: left;
+    color: #305057;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Input field */
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Tombol Login */
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #305057;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efek hover pada tombol */
+.login-box button:hover {
+    background-color: #1565C0;
+}
