@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #e6f7fa;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Konten utama */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Default margin sesuai lebar sidebar */
+    transition: margin-left 0.3s ease-in-out; /* Transisi untuk animasi */
+    width: 100%;
+}
+
+.content h2 {
+    margin-bottom: 14px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 750px;
+    max-width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    text-align: left;
+    color: #305057;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #305057;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1565C0;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .content {
+        margin-left: 200px; /* Sinkron dengan lebar sidebar di tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 180px; /* Sinkron dengan lebar sidebar lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        margin-left: 0; /* Sinkron saat sidebar tertutup */
+        padding: 10px; /* Padding lebih kecil untuk perangkat kecil */
+    }
+
+    form {
+        padding: 15px;
+        box-shadow: none; /* Hilangkan bayangan di perangkat kecil */
+    }
+
+    form label {
+        font-size: 12px; /* Ukuran font lebih kecil */
+    }
+
+    form button {
+        font-size: 14px; /* Ukuran tombol lebih kecil */
+    }
+}
